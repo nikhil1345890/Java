@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+        "https://hibernate.org/dtd/hibernate-configuration-5.3.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://bytexldb.com:5051/db_4432wq58b</property>
+        <property name="hibernate.connection.username">user_4432wq58b</property>
+        <property name="hibernate.connection.password">p4432wq58b</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Show SQL in console -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Update schema automatically -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Annotated classes -->
+        <mapping class="com.example.Student"/>
+
+    </session-factory>
+</hibernate-configuration>

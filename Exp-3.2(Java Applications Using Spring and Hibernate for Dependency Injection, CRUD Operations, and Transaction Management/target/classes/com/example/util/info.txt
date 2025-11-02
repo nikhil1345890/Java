@@ -1,0 +1,5 @@
+part a = main.java
+
+part b = mainHybernate.java
+
+part c = BankingApp.java
